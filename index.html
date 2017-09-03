@@ -8,12 +8,25 @@
 	<title>CRONOS UMK</title>
 </head>
 <body>
+
 	<div id="contenedor">
-		<div class="reloj" id="Horas">00</div>
-	</div>
-	<center>
+		<div class="reloj">Tiempo en linea: </div>
+		<div class="reloj" id="ttCall">00</div>
 		<input type="button" class="boton" value="Detener" onclick="Death()">
-	</center>
+
+		<div>Tiempo en Llamada: </div>
+
+		<div class="reloj" id="Horas">00</div>
+		<div class="reloj" id="Minutos">:00</div>
+		<div class="reloj" id="Segundos">:00</div>
+		<div class="reloj" id="Centesimas">:00</div>
+		<input type="button" class="boton" id="inicio" value="Iniciar &#9658;" onclick="inicio();">
+		<input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar();" style="display: none">
+	</div>
+		<!--<input type="button" class="boton" value="Detener" onclick="Death()">-->
+	</div>
+
+
 
 </body>
 
